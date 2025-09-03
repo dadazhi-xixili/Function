@@ -1,4 +1,0 @@
-bin/Release/*.xml
-bin/
-.vs
-obj
