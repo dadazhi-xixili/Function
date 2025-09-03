@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<ExcelAddInExplicitRegistration>true</ExcelAddInExplicitRegistration>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <DefineConstants>$(DefineConstants);DEBUG</DefineConstants>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ExcelDna.AddIn" Version="1.8.0" />
+		<PackageReference Include="ExcelDna.IntelliSense" Version="1.8.0" />
+		<PackageReference Include="ExcelDna.Registration" Version="1.8.0" />
+		<PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="Microsoft.Office.Tools.Excel">
+	    <HintPath>..\..\..\..\..\..\..\Programme\Microsoft Visual Studio\2022\Professional\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.Office.Tools.Excel.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>
