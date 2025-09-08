@@ -14,7 +14,7 @@ public partial class Function
     )
     {
         string tempPath = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString("N") + ".py");
-        await File.WriteAllTextAsync(tempPath, pyCode);
+        File.WriteAllText(tempPath, pyCode);
         return await RunPtyon(tempPath, dim, pyPath, isDbug, true);
     }
 
